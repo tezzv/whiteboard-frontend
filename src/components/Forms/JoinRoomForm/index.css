@@ -1,0 +1,20 @@
+.btnR1 {
+    height: 3rem;
+    width: 20rem;
+    margin-top: 3rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 400ms;
+    box-shadow: 0 0 4px antiquewhite, 0 0 4px antiquewhite;
+}
+
+.btnR1:hover {
+    background-color: antiquewhite;
+    box-shadow: none;
+}
+
+.btnR1:disabled{
+    background-color: rgb(193, 187, 176);
+}

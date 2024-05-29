@@ -1,0 +1,131 @@
+::selection {
+    background-color: gray;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #424242, #212121);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+.title {
+    color: wheat;
+    margin: 3rem 0;
+    font-size: 2rem;
+}
+
+.input {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    width: 20rem;
+    background-color: inherit;
+    color: wheat;
+    border: none;
+    outline: none;
+}
+
+.username {
+    border-bottom: 1px solid wheat;
+    transition: all 400ms;
+}
+
+.username:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.password {
+    border-bottom: 1px solid wheat;
+    transition: all 400ms;
+}
+
+.password:hover {
+    background-color: #424242;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btnR {
+    height: 3rem;
+    width: 20rem;
+    margin-top: 3rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 400ms;
+    box-shadow: 0 0 4px antiquewhite, 0 0 4px antiquewhite;
+}
+
+.btnR:hover {
+    background-color: antiquewhite;
+    box-shadow: none;
+}
+
+.btnR:disabled{
+    background-color: rgb(193, 187, 176);
+}
+
+.generatecode{
+    /* background-color: #a73939; */
+    margin-top: 16px;
+    border: 1px solid rgb(93, 82, 64);
+    width: 20rem;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.code{
+    background: transparent;
+    border: none;
+    margin-left: 4px;
+}
+
+.copyicon{
+    width: 24px;
+    /* filter: invert(1); */
+    /* mix-blend-mode: multiply; */
+}
+
+.copybtn{
+    background: none;
+    border: none;
+}
+
+.copybtn:hover{
+    opacity: .5;
+}
+
+.copybtn:disabled{
+    opacity: .5;
+}
+
+.genbtn{
+    /* background: rgb(93, 82, 64); */
+    background: #bc851d;
+    border: none;
+    color: white;
+}
+
+.genbtn:hover{
+    background: #ce9c3f;
+}
+
+.gendiv{
+    display: flex;
+}

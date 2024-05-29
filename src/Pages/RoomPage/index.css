@@ -1,0 +1,185 @@
+.title1 {
+  color: #cb8b13;
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+
+.tools {
+  /* height: 40px; */
+  /* width: 50vw; */
+
+  min-width: fit-content;
+
+  /* padding: 4px; */
+  /* border: wheat;
+    background-color: aqua; */
+}
+
+
+
+.roompage {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnClose1 {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.usersTab {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: black;
+  color: white;
+  z-index: 1;
+}
+
+.topBtns {
+  display: flex;
+  position: absolute;
+  left: 5%;
+  top: 4%;
+  gap: 20px;
+}
+
+.btnUsers {
+
+  width: 100px;
+}
+
+.btnIcon {
+  background: none;
+  border: none;
+  width: 40px;
+}
+
+.btnIcon:hover {
+  opacity: .9;
+}
+
+
+.header1 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.urbtns {
+  padding: 0 20px 0 20px;
+}
+
+/* radio buttons */
+section {
+  --col-orange: #d17842;
+  --col-dark: #0c0f14;
+  --col-darkGray: #52555a;
+  --col-gray: #aeaeae;
+
+  width: fit-content;
+  min-width: 40vw;
+  padding: 0px 12px 0px 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--col-dark);
+  border-radius: 30px;
+}
+
+section>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4px;
+}
+
+.tools2 {}
+
+.label {
+  padding: 8px 10px;
+  transition: all 200ms;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.label input[type="radio"] {
+  display: none;
+}
+
+.label>svg {
+  transition: all 200ms;
+  fill: var(--col-gray);
+  width: 14px;
+}
+
+.label:hover:not(:has(input:checked))>svg {
+  fill: #d17842;
+  opacity: 0.6;
+}
+
+.label::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  top: 20px;
+  background: var(--col-orange);
+  transition: all 200ms;
+}
+
+.label>svg {
+  transition: 300ms;
+  fill: var(--col-darkGray);
+  margin-top: 0;
+}
+
+.label:has(input:checked)>svg {
+  fill: var(--col-orange);
+  scale: 1.2;
+  margin-top: -5px;
+}
+
+.label:has(input:checked)::before {
+  width: 100%;
+  left: 0;
+  top: 25px;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
+}
+
+.urbtn {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  align-items: center;
+}
+
+.urbtn:hover {
+  opacity: .6;
+}
+
+.urbtn:disabled {
+  opacity: .6;
+}
+
+.canvas1 {
+  width: 80vw;
+  height: 70vh;
+  border: solid 1px #d17842;
+}
