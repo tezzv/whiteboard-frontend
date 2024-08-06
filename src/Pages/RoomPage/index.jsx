@@ -160,7 +160,7 @@ const RoomPage = ({ socket, users }) => {
             </section>
 
             {/* line weight */}
-            <div className="properties">
+            {/* <div className="properties">
               <div style={{ display: 'flex' }}>
                 <p>Line Weight</p>
                 <select value={lineWeight} onChange={handleChangeLineweight}>
@@ -172,7 +172,7 @@ const RoomPage = ({ socket, users }) => {
                   <option>10</option>
                 </select>
               </div>
-            </div>
+            </div> */}
           </div>
         }
 
