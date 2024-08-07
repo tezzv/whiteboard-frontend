@@ -10,9 +10,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import ChatRoom from './components/Chat';
 
 // const server = "http://localhost:5000";
-const server = import.meta.env.MODE === "production"
-  ? import.meta.env.VITE_SERVER_URL_PROD
-  : import.meta.env.VITE_SERVER_URL_DEV;
+// const server = import.meta.env.MODE === "production"
+//   ? import.meta.env.VITE_SERVER_URL_PROD
+//   : import.meta.env.VITE_SERVER_URL_DEV;
+
+const server = "wss://whiteboard-backend-two.vercel.app";
 
 const connectionOptions = {
   "force new connection": true,

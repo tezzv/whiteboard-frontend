@@ -95,7 +95,7 @@ const RoomPage = ({ socket, users }) => {
                   />
                   <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.7508 5.42598L21.4716 11.1466M1.44873 25.4482L8.38683 24.0503C8.75516 23.9761 9.09335 23.7947 9.35895 23.529L24.8906 7.98944C25.6352 7.2444 25.6347 6.03672 24.8894 5.29231L21.5993 2.00599C20.8543 1.26188 19.6472 1.26239 18.9028 2.00712L3.36961 17.5483C3.10452 17.8135 2.92351 18.151 2.84923 18.5186L1.44873 25.4482Z"
-                      stroke="#D17842" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      stroke="#D17842" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <p style={{ color: 'white' }}>Pencil</p>
                 </label>
@@ -105,7 +105,7 @@ const RoomPage = ({ socket, users }) => {
                     checked={tool === 'line'}
                   />
                   <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 19.4L10.7 10.7L19.4 2" stroke="#D17842" stroke-width="3" stroke-linecap="round" />
+                    <path d="M2 19.4L10.7 10.7L19.4 2" stroke="#D17842" strokeWidth="3" strokeLinecap="round" />
                   </svg>
                   <p style={{ color: 'white' }}>Line</p>
                 </label>
@@ -115,7 +115,7 @@ const RoomPage = ({ socket, users }) => {
                     checked={tool === 'rect'}
                   />
                   <svg width="21" height="21" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1.3999" width="20" height="20" stroke="#D17842" stroke-width="2" />
+                    <rect x="1" y="1.3999" width="20" height="20" stroke="#D17842" strokeWidth="2" />
                   </svg>
                   <p style={{ color: 'white' }}>Rect</p>
                 </label>
@@ -133,7 +133,7 @@ const RoomPage = ({ socket, users }) => {
                   onClick={undo}
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.87115 14.5C5.88914 17.6939 8.80463 20 12.2424 20C16.5268 20 20 16.4183 20 12C20 7.58172 16.5268 4 12.2424 4C9.37103 4 6.86399 5.60879 5.52267 8M4.87115 7.21845L5.93971 8.25008M7.87879 9H4V5L7.87879 9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4.87115 14.5C5.88914 17.6939 8.80463 20 12.2424 20C16.5268 20 20 16.4183 20 12C20 7.58172 16.5268 4 12.2424 4C9.37103 4 6.86399 5.60879 5.52267 8M4.87115 7.21845L5.93971 8.25008M7.87879 9H4V5L7.87879 9Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <p style={{ color: 'white' }}>Undo</p>
                 </button>
@@ -142,7 +142,7 @@ const RoomPage = ({ socket, users }) => {
                   onClick={redo}
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.1288 14.5C18.1109 17.6939 15.1954 20 11.7576 20C7.47319 20 4 16.4183 4 12C4 7.58172 7.47319 4 11.7576 4C14.2706 4 16.5045 5.23225 17.9221 7.14279M18.4773 8C18.3099 7.70154 18.1243 7.41526 17.9221 7.14279M17.9221 7.14279L16.1212 9H20V5L17.9221 7.14279ZM18.0606 8.66667L19.2727 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.1288 14.5C18.1109 17.6939 15.1954 20 11.7576 20C7.47319 20 4 16.4183 4 12C4 7.58172 7.47319 4 11.7576 4C14.2706 4 16.5045 5.23225 17.9221 7.14279M18.4773 8C18.3099 7.70154 18.1243 7.41526 17.9221 7.14279M17.9221 7.14279L16.1212 9H20V5L17.9221 7.14279ZM18.0606 8.66667L19.2727 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <p style={{ color: 'white' }}>Redo</p>
                 </button>
@@ -152,7 +152,7 @@ const RoomPage = ({ socket, users }) => {
                   disabled={elements.length === 0}
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6.17647H20M9 3H15M10 16.7647V10.4118M14 16.7647V10.4118M15.5 21H8.5C7.39543 21 6.5 20.0519 6.5 18.8824L6.0434 7.27937C6.01973 6.67783 6.47392 6.17647 7.04253 6.17647H16.9575C17.5261 6.17647 17.9803 6.67783 17.9566 7.27937L17.5 18.8824C17.5 20.0519 16.6046 21 15.5 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 6.17647H20M9 3H15M10 16.7647V10.4118M14 16.7647V10.4118M15.5 21H8.5C7.39543 21 6.5 20.0519 6.5 18.8824L6.0434 7.27937C6.01973 6.67783 6.47392 6.17647 7.04253 6.17647H16.9575C17.5261 6.17647 17.9803 6.67783 17.9566 7.27937L17.5 18.8824C17.5 20.0519 16.6046 21 15.5 21Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <p style={{ color: 'white' }}>Clear Canvas</p>
                 </button>
